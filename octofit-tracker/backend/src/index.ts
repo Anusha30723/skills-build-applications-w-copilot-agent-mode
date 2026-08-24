@@ -8,7 +8,7 @@ const codespaceName = process.env.CODESPACE_NAME
 const apiBaseUrl = codespaceName
   ? `https://${codespaceName}-8000.app.github.dev`
   : `http://localhost:${port}`
-
+//already implemented the codespace so they are no changes made
 app.use(express.json())
 
 app.get('/api/health', (_request, response) => {
